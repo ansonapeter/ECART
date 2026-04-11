@@ -1,0 +1,30 @@
+meta {
+  name: add product by admin
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/api/products
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNvbmFwZXRlcjE2QGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MDc5NDAzOCwiZXhwIjoxNzcwODgwNDM4fQ.wqzOvUn3g7fXyWKRMHY7mfL3YRAQRDmzX7FKbNJJq1k
+}
+
+body:json {
+  {
+    "name": "Mike",
+    "description": "Bluetooth",
+    "price": 500,
+    "stock": 4
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: getorder
+  type: http
+  seq: 10
+}
+
+get {
+  url: http://localhost:8080/api/orders
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNvbmFwZXRlcjE2QGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzcwODE3MTMzLCJleHAiOjE3NzA5MDM1MzN9.ZSrNTi4W3A7uyF2O9knHkD-m5YkvZVq5qdNTnUg4YEA
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

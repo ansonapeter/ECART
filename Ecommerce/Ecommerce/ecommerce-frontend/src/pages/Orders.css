@@ -1,0 +1,100 @@
+.orders-page {
+  padding: 40px;
+  background: #f6f9fc;
+  min-height: 100vh;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.orders-header button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+.order-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.order-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-total {
+  font-weight: bold;
+  color: #444;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.status.created { background: #eee; }
+.status.paid { background: #c8e6c9; }
+.status.confirmed { background: #bbdefb; }
+.status.shipped { background: #ffe082; }
+.status.delivered { background: #a5d6a7; }
+.status.cancelled { background: #ffcdd2; }
+
+.eta {
+  color: green;
+  margin: 10px 0;
+}
+
+.order-items {
+  margin: 15px 0;
+}
+
+.item-row {
+  margin-bottom: 5px;
+}
+
+.order-actions button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.pay-btn {
+  background: #ff9800;
+  width: 10%;
+  color: white;
+}
+
+.refund-btn {
+  background: #f44336;
+  color: white;
+}
+
+.track-btn {
+  background: #607d8b;
+  color: white;
+}
+
+.return-info {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #ff9800;
+  font-weight: 500;
+}
+
+.return-info.approved {
+  color: #4caf50;
+}

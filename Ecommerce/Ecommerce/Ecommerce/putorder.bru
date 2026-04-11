@@ -1,0 +1,28 @@
+meta {
+  name: putorder
+  type: http
+  seq: 11
+}
+
+put {
+  url: http://localhost:8080/api/orders/status
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNvbmFwZXRlcjE2QGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzcwNzk0MTQzLCJleHAiOjE3NzA4ODA1NDN9.kq2z53qqF4egxHjU62job2al6gMGkQsnQIu-mRY91jE
+}
+
+body:json {
+  {
+    "orderId": 31,
+    "status": "SHIPPED"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

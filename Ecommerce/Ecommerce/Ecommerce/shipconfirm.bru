@@ -1,0 +1,27 @@
+meta {
+  name: shipconfirm
+  type: http
+  seq: 16
+}
+
+put {
+  url: http://localhost:8080/api/admin/orders/51/ship
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNvbmFwZXRlcjE2QGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTA1NzA2MSwiZXhwIjoxNzcxMTQzNDYxfQ.Ipk0pJQx9xHRodvduWUbKqgxGtQCH5pIflatm3hkl5s
+}
+
+body:json {
+  {
+    "status": "SHIPPED"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

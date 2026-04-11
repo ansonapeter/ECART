@@ -1,0 +1,20 @@
+meta {
+  name: placeorder
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:8080/api/orders
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNvbmFwZXRlcjE2QGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzcxMDQzNzQxLCJleHAiOjE3NzExMzAxNDF9.GRJ6cTHJaBDnSkvYDvHZJYZTDoW_h029NiXx4084Q74
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

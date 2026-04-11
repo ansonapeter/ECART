@@ -1,0 +1,20 @@
+meta {
+  name: testing
+  type: http
+  seq: 21
+}
+
+get {
+  url: http://localhost:8080/api/admin/orders/test
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNvbmFwZXRlcjE2QGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTY2MDUyNywiZXhwIjoxNzcxNzQ2OTI3fQ.7soLtPcgfFANwrgPBc5VfDEI0Y7SPuupniNTHCW0QM4
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

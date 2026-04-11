@@ -1,0 +1,20 @@
+meta {
+  name: paymentorder
+  type: http
+  seq: 13
+}
+
+post {
+  url: http://localhost:8080/api/payments/52
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNvbmFwZXRlcjE2QGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzcxMTMyMjEwLCJleHAiOjE3NzEyMTg2MTB9.kzGFW_jzbcNKTZck5EqPkbG_3DQPqQTkdTrfkzgZgxc
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

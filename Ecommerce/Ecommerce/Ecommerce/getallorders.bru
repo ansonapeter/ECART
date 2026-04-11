@@ -1,0 +1,20 @@
+meta {
+  name: getallorders
+  type: http
+  seq: 12
+}
+
+get {
+  url: http://localhost:8080/api/orders/all
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNvbmFwZXRlcjE2QGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzcwNzk0MTQzLCJleHAiOjE3NzA4ODA1NDN9.kq2z53qqF4egxHjU62job2al6gMGkQsnQIu-mRY91jE
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,28 @@
+meta {
+  name: confirmadmin
+  type: http
+  seq: 15
+}
+
+put {
+  url: http://localhost:8080/api/admin/orders/35/status
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNvbmFwZXRlcjE2QGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MDg3NDQ5NCwiZXhwIjoxNzcwOTYwODk0fQ.AbM2X5_JkT1w2n2g_CTMW8XfDOrQKsAfBVsbxaBm-mw
+}
+
+body:json {
+  {
+    "status": "CONFIRMED"
+  }
+  
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: ExternalproductAPI
+  type: http
+  seq: 20
+}
+
+post {
+  url: http://localhost:8080/api/admin/products/import
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNvbmFwZXRlcjE2QGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTMyNjk0OCwiZXhwIjoxNzcxNDEzMzQ4fQ.Ze5CJRHEO_8kwJlMeA0WRyLzl34LfC5K2X5c2Ta9hkQ
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

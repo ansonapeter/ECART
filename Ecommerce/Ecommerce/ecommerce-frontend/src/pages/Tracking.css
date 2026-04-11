@@ -1,0 +1,71 @@
+.tracking-page {
+  background: #f4f6f9;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.tracking-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.tracking-header button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+.tracking-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.timeline {
+  margin-top: 25px;
+  border-left: 3px solid #ddd;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ccc;
+  position: absolute;
+  left: -30px;
+  top: 5px;
+}
+
+.timeline-dot.done {
+  background: #4caf50;
+}
+
+.timeline-content {
+  margin-left: 10px;
+}
+
+.status-text {
+  font-weight: 500;
+  color: #555;
+}
+
+.done-text {
+  color: #2e7d32;
+}
+
+.time {
+  font-size: 12px;
+  color: gray;
+}

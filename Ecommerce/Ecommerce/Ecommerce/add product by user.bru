@@ -1,0 +1,30 @@
+meta {
+  name: add product by user
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/api/products
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNvbmFwZXRlcjE2QGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzcwNzA3NDQ1LCJleHAiOjE3NzA3OTM4NDV9.TZmiRDqvwXvexb2dBumcCKqBh5TCL3le5c34cySKi24
+}
+
+body:json {
+  {
+    "name": "iPhone 15",
+    "description": "Apple mobile",
+    "price": 80000,
+    "stock": 10
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

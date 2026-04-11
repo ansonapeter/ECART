@@ -1,0 +1,20 @@
+meta {
+  name: returnorder
+  type: http
+  seq: 19
+}
+
+put {
+  url: PUT /api/orders/51/return
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNvbmFwZXRlcjE2QGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MTA1NzA2MSwiZXhwIjoxNzcxMTQzNDYxfQ.Ipk0pJQx9xHRodvduWUbKqgxGtQCH5pIflatm3hkl5s
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
