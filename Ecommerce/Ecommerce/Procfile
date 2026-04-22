@@ -1,0 +1,1 @@
+web: java -Dspring.profiles.active=prod -jar target/Ecommerce-0.0.1-SNAPSHOT.jar
